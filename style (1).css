@@ -39,20 +39,39 @@ body {
 .header-email {
   padding-left: 30px;
   background-image: url("img/icon-email-header.svg");
+  transition: text-decoration 0.5s ease 0s;
+}
+.header-email:hover{
+  text-decoration: underline;
 }
 
 .header-phone {
   padding-left: 25px;
   background-image: url("img/icon-phone-header.svg");
+  transition: text-decoration 0.5s ease 0s;
+}
+.header-phone:hover{
+  text-decoration: underline;
 }
 
 .hero-image {
   margin-bottom: 620px;
 }
 
-.hero-image .container {
+.container-project {
   max-width: 1408px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.container-project > *:not(:last-child){
+  margin-bottom: 30px;
+  
+  padding-bottom: 20px;
+  border-bottom: 1px solid #0000004b;
 }
 
 .heading {
@@ -152,6 +171,7 @@ body {
 .project-image {
   margin: 0 0 24px;
   text-align: center;
+  object-fit: cover;
 }
 
 .projects p {
@@ -167,6 +187,15 @@ body {
   border-radius: 4px;
   background-color: #288be6;
   color: #ffffff;
+  transition: background-color 0.5s ease 0s;
+}
+
+.button:hover {
+  background-color: #990036;
+}
+
+.button:active {
+  background-color: #0f8100ae;
 }
 
 .page-footer {
@@ -186,9 +215,19 @@ body {
 .footer-email {
   padding-left: 30px;
   background-image: url("img/icon-email-footer.svg");
+  transition: text-decoration 0.5s ease 0s;
+}
+
+.footer-email:hover{
+  text-decoration: underline;
 }
 
 .footer-phone {
   padding-left: 25px;
   background-image: url("img/icon-phone-footer.svg");
+  transition: text-decoration 0.5s ease 0s;
+}
+
+.footer-phone:hover{
+  text-decoration: underline;
 }
